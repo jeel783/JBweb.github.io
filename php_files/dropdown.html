@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			
+		}
+		nav{
+			color: white;
+			margin-top:50px;
+			font-size: 20px;
+			border:2px solid blue;
+			padding: 30px;
+			background: black;
+			text-align: center;		
+		}
+		nav ul{
+			float: left;
+		}
+		nav ul li{
+			display: inline;
+			list-style: none;
+			text-align: center;
+		}
+		nav ul li button{
+			border:none;
+			color: white;
+			font-size: 20px;
+			font-size: inherit;
+			margin-left: 80px;
+			margin-bottom: 20px;
+			background: black;
+			text-align: center;
+			margin-bottom: 500px;
+		}
+		nav ul li .dropdown,.dropdown1 , .dropdown2{
+			position: absolute;
+			float: right;
+			text-align: left;
+			display: none;
+			background: white;
+			color: black;
+			padding-top: 20px;
+			width:450px;
+			height: 350px;
+		}
+		.dropdown table th{
+				color: blue;
+				font-size: 16px;
+				margin-left: 50px;
+		}
+		nav ul li .dropdown a{
+			display: block;
+			text-decoration: none;
+			color:white;
+			margin:8px;
+		}
+		button:hover .dropdown{
+			display: block;
+		}
+		nav ul li .dropdown a:hover{
+			background: gray;
+			padding:10px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li><button>Links
+				<div class="dropdown">
+					<table cellspacing="20" cellpadding="20">
+						<tr>
+							<th>APPLICATION</th>
+							<th>PERSONAL</th>
+						</tr>
+						<tr>
+							<td>Mobile App</td>
+							<td>Resume</td>
+						</tr>
+						<tr>
+							<td>Desktop App</td>
+							<td>Portfolio</td>
+						</tr>
+						<tr>
+							<th>BUSINESS</th>
+							<th>HEADER STYLE</th>
+						</tr>
+						<tr>
+							<td>Multipurpose</td>
+							<td>Basic</td>
+						</tr>
+						<tr>
+							<td>Agency</td>
+							<td>Basic (Signup)</td>
+						</tr>
+						<tr>
+							<td>Press</td>
+							<td>Grapic</td>
+						</tr>
+						<tr>
+							<td>Directory</td>
+							<td>Grapic (Singup)</td>
+						</tr>
+						<tr>
+							<td>Rental</td>
+							<td>Inner Page</td>
+						</tr>
+						<tr>
+							<td>Real Estae</td>
+							<td>Nav Only</td>
+						</tr>
+						<tr>
+							<td>Classifieds</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>LEAD GENRATION</th>
+						</tr>
+						<tr>
+							<td>Lead Capture</td>
+						</tr>
+					</table>
+				</div>
+			</button></li>
+			<li><button>Documents
+				<div class="dropdown1">
+					<table cellspacing="20" cellpadding="20">
+						<tr>
+							<th>APPLICATION</th>
+							<th>PERSONAL</th>
+						</tr>
+						<tr>
+							<td>Mobile App</td>
+							<td>Resume</td>
+						</tr>
+						<tr>
+							<td>Desktop App</td>
+							<td>Portfolio</td>
+						</tr>
+						<tr>
+							<th>BUSINESS</th>
+							<th>HEADER STYLE</th>
+						</tr>
+						<tr>
+							<td>Multipurpose</td>
+							<td>Basic</td>
+						</tr>
+						<tr>
+							<td>Agency</td>
+							<td>Basic (Signup)</td>
+						</tr>
+						<tr>
+							<td>Press</td>
+							<td>Grapic</td>
+						</tr>
+						<tr>
+							<td>Directory</td>
+							<td>Grapic (Singup)</td>
+						</tr>
+						<tr>
+							<td>Rental</td>
+							<td>Inner Page</td>
+						</tr>
+						<tr>
+							<td>Real Estae</td>
+							<td>Nav Only</td>
+						</tr>
+						<tr>
+							<td>Classifieds</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>LEAD GENRATION</th>
+						</tr>
+						<tr>
+							<td>Lead Capture</td>
+						</tr>
+					</table>
+				</div>
+			</button></li>
+			<li><button>Landings
+				<div class="dropdown2">
+					<a href="">About</a>
+					<a href="">Landings</a>
+					<a href="">Documents</a>
+				</div>
+			</button></li>
+		</ul>
+	</nav>
+
+
+		<script>
+			
+			$(document).ready(function(){
+				$("button").mouseover(function(){
+					$(".dropdown").css("display","block");
+				});
+				$("button").mouseleave(function(){
+					$(".dropdown").css("display","none");
+				});
+			});
+		</script>
+		<!--button:hover .dropdown{
+			display: block;
+		} -->
+</body>
+</html>

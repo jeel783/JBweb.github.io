@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*second content start*/
+.wrapper{
+	padding-top:200px;
+	background: black;
+	color:white;
+	font-size: 30px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height:60vh;
+	display: flex;
+	position: relative;
+}
+.wrapper .container{
+	width:400px;
+	align-items: left;
+	text-align: left;
+	font-weight: 0;
+	font-family: 'Lato', sans-serif;
+	margin-left: 150px;
+	
+}
+.wrapper .container .content{
+	
+	 animation: slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.wrapper .container .content h3{
+	font-weight: 0px;
+	font-family: 'Lato', sans-serif;
+}
+@keyframes slide-in-fwd-left {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+            transform: translateZ(-1400px) translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+.wrapper .container p{
+	padding-top: 15px;
+	font-size: 20px;
+	opacity: 0.4;
+}
+
+.wrapper .container .store{
+	display: flex;
+	margin-top: 50px;
+}
+.wrapper .container .app_store{
+	width: 150px;
+	height: 100px;
+}
+.wrapper .container .google_play{
+	height: 100px;
+	width: 165px;
+	margin-left: 15px;
+}
+.wrapper .iphone_image{
+	height:550px;
+	margin-left: 120px;
+	border-radius:65% 35% 38% 62% / 43% 47% 53% 57%  ;
+	background: linear-gradient(to top, #c2e59c, #64b3f4);
+	 animation: slide-in-fwd-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.wrapper .iphone_image .image{
+	 margin-top: 20px;
+}
+@keyframes slide-in-fwd-right {
+  0% {
+    -webkit-transform: translateZ(-900px) translateX(100px);
+            transform: translateZ(-100px) translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.wrapper .iphone_image .image{
+	height: 500px;
+	z-index: 1;
+}
+.svg svg{
+	 margin-bottom:500px;
+}
+/*second content end*/

@@ -1,0 +1,62 @@
+/*header start*/
+header{
+height: 100px;
+position: fixed;
+top: 00%;
+position: relative;		
+}
+header .container{
+display: flex;
+position: static;
+}
+header h2{
+margin-top: 30px;
+margin-left: 200px;
+font-size: 1.8rem;
+font-weight: bold;
+color:#0061f2 ;
+}
+header h2:focus, header h2:hover{
+color: #0042a6 !important;
+}
+header .container .links{
+margin-top:40px;
+margin-left: 250px;
+}
+header .container .links ul{
+display: flex;
+list-style: none;
+}
+header .container .links ul li a{
+text-decoration: none;
+margin-left: 30px;
+color: black;
+font-size: 19px;
+font-family:  Roboto "Helvetica Neue";
+font-weight: 500;
+opacity: 0.6;
+}
+
+header .container .button{
+margin-top:43px;
+margin-left: 100px;
+float: right;
+}
+header .container .button .buy_button{
+text-decoration: none;
+padding: 15px;
+text-align: center;
+padding-left: 25px;
+padding-right: 20px;
+background: #0061f2;
+color: white;
+border-radius: 25px;
+font-weight: bold;
+}
+header .container .links ul li a:hover {
+opacity: 1;
+}
+header .container .button .buy_button:hover{
+background: #0042a6;
+}
+/*header end*/

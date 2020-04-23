@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header{
+	background: #4776e6; /* fallback for old browsers */
+  	background: linear-gradient(to right, #4776e6, #8e54e9);
+  	position: static; 
+}
+header .logo h2{
+	color:white;
+}
+header .container .links ul li a{
+	color: white !important;
+
+}
+header .container .links ul li a:hover{
+	color:white;
+}
+/*second content start*/
+.wrapper{
+	background: #4776e6; /* fallback for old browsers */
+	padding-top: 80px;
+ 	background: linear-gradient(to right, #4776e6, #8e54e9); 
+	color:white;
+	font-size: 30px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height:600px;
+	display: flex;
+	position: relative;
+}
+.wrapper .container{
+	width:500px;
+	align-items: left;
+	text-align: left;
+	font-weight: 0;
+	font-family: 'Lato', sans-serif;
+	margin-left: 80px;
+	
+}
+.wrapper .container .content{
+	
+	 animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.wrapper .container .content h3{
+	font-weight: 0px;
+	font-family: 'Lato', sans-serif;
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.wrapper .container p{
+	padding-top: 15px;
+	font-size: 20px;
+	opacity: 0.4;
+}
+
+.wrapper .container .store{
+	display: flex;
+	margin-top: 50px;
+	background:#0061f2;
+	width: 150px;
+	height: 60px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 40px;
+}
+
+.wrapper .container .store a {
+	border-radius: 20px;
+	color:white;
+	font-size: 20px; 
+	text-decoration: none;
+}
+.wrapper .container .store:hover{
+	background: #0042a6;
+	animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+.wrapper .iphone_image{
+	height:550px;
+	margin-left: 80px;
+	animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.wrapper .iphone_image .image{
+	 margin-top: 20px;
+	 width: 550px;
+	 height: 450px;
+}
+
+.wrapper .iphone_image .image{
+	height: 500px;
+	z-index: 1;
+}
+/*second content end*/
